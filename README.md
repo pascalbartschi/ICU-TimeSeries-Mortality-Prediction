@@ -18,3 +18,7 @@ This project aims to predict ICU patient mortality using time-series data from t
 - Preprocess data, train models, and evaluate results.
 - Implemented models include classical ML, deep learning, and foundation models.
 
+## TODOs
+
+* [ ] Urine dublicate solution implementation 
+

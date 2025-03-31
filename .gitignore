@@ -3,3 +3,5 @@ data
 ml4h_data 
 **/.ipynb_checkpoints/*
 **/lightning_logs/*
+ml4h_data
+.DS_Store

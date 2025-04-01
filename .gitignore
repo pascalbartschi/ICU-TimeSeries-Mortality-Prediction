@@ -5,3 +5,4 @@ ml4h_data
 **/lightning_logs/*
 ml4h_data
 .DS_Store
+__pycache__

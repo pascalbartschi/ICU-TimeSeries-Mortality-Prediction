@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from sklearn.linear_model import (LogisticRegression, LinearRegression)
 from sklearn.ensemble import RandomForestClassifier
+import torch
 
 
 from ollama import chat
@@ -32,6 +33,9 @@ from IPython.display import display, clear_output
 from matplotlib import pyplot as plt
 
 from modules import *
+
+# globals
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
 def extract_features(df):
     # df = df.copy()
@@ -192,7 +196,7 @@ def evaluate_llm_predictions(prompt, test_cases, outcomes, model="chronos", max_
 
     return y_true, y_pred, y_scores
 
-def get_chronos_embeddings(X_tensor):
+def get_chronos_embeddings(X_tensor, num_features, pipeline, return_stack = False):
 
     X_tensor = X_tensor.to(device)
     embedding_sum = None
@@ -224,5 +228,8 @@ def get_chronos_embeddings(X_tensor):
     # verify correct shape
     assert final_embeddings.shape == embeddings.shape, "Mean was taken across the wrong dimension"
 
-    return final_embeddings, torch.stack(embedding_list, dim=1).cpu()
+    if return_stack: 
+        return torch.stack(embedding_list, dim=1).cpu()
+    else: 
+        return final_embeddings
 

@@ -15,8 +15,8 @@ Create a new environment using the requirements or use the student-cluster and m
 ### 2_SupervisedML
 
 * Run 2.1.2_basic_and_tsfresh_FINAL.ipynb to get the results of the 5 models with basic features as well as added features.
-* Run Q2_RNN/2_RNN.ipynb to get the results for the LSTM and BiLSTM
-* Run 02-3-transformer-(tokens) to obtain the results for the transformer task in 2
+* Run Q2_RNN/2_RNN.ipynb to get the results for the LSTM and BiLSTM.
+* Run 02-ransformers and 02-3-transformer-(tokens) to obtain the results for the transformers' task in 2.
 
 ### 3_RepresentationLearning
 

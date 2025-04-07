@@ -5,21 +5,23 @@ This project aims to predict ICU patient mortality using time-series data from t
 
 ## How to run this code to get all results from A-Z
 
-Use the environment configured on the student-cluster
+Create a new environment using the requirements or use the student-cluster and make sure to add optuna
 
 ### 1_EDA
 
+* make sure to get the data on the studen cluster in ml4h/p1 and match it to the path given in 01-data-processing-exploration.ipynb
 * Run 01-data-processing-exploration.ipynb to do the preprocessing and get the parquets in ./data
 
 ### 2_SupervisedML
 
-* @damla
+* @damla in what order goes what here?
 * Run Q2_RNN/2_RNN.ipynb to get the results for the LSTM and BiLSTM
 * Run 02-3-transformer-(tokens) to obtain the results for the transformer task in 2
 
 ### 3_RepresentationLearning
 
-* 
+* Run 3.1_Encoder to get the results of the LSTM encoder
+* Run 3.2_LabelScarcity_Complete_FINAL to do the scarcity experiments and get the patient_embeddings_* for 3.3
 
 ### 4_FoundationModels
 

@@ -13,13 +13,14 @@ Use the environment configured on the student-cluster
 
 ### 2_SupervisedML
 
-* @damla
+* @damla in what order goes what here?
 * Run Q2_RNN/2_RNN.ipynb to get the results for the LSTM and BiLSTM
 * Run 02-3-transformer-(tokens) to obtain the results for the transformer task in 2
 
 ### 3_RepresentationLearning
 
-* 
+* Run 3.1_Encoder to get the results of the LSTM encoder
+* Run 3.2_LabelScarcity_Complete_FINAL to do the scarcity experiments and get the patient_embeddings_* for 3.3
 
 ### 4_FoundationModels
 

@@ -5,5 +5,25 @@ This project aims to predict ICU patient mortality using time-series data from t
 
 ## How to run this code to get all results from A-Z
 
-1. Use the environment configured on the student-cluster
-2. Run 01-data-processing-exploration.ipynb to do the preprocessing and get the parquet file in the right place 
+Use the environment configured on the student-cluster
+
+### 1_EDA
+
+* Run 01-data-processing-exploration.ipynb to do the preprocessing and get the parquets in ./data
+
+### 2_SupervisedML
+
+* @damla
+* Run Q2_RNN/2_RNN.ipynb to get the results for the LSTM and BiLSTM
+* Run 02-3-transformer-(tokens) to obtain the results for the transformer task in 2
+
+### 3_RepresentationLearning
+
+* 
+
+### 4_FoundationModels
+
+* Uncomment all cells in Q4.1_LLM4TS_problem.ipynb to get the embeddings and run the notebook the get the results stated in the report
+* Visualize the embeddings with 04-3-embeddings.visualizations.ipynb
+* Uncomment all cells and run to get the Chronos results for q4.3. make sure to have 17GB of disk space, otherwise *.pt file cannot be written to disk (needed for q4.3.2)
+
